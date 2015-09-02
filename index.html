@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="js/jq.js"></script>
+</head>
+<body>
+	<div style="width:50%;margin:0 auto;">
+<div class="viewCommentaries">
+	<div id="10500" class="rateComments">
+		<div class="rates ratminus" x="-1"></div>
+		<div class="viewrate">3</div>
+		<div class="rates ratplus" x="1"></div>
+		<div style="clear:both;float:none;"> </div>
+	</div>
+	<div id="10500">
+		<span id="name10500" style="color:#1e578f;font-size:18px;">Аноним</span> 
+		<span style="color:#1e578f;font-size:10px;">18.05.2015 17:25</span> 
+		<span class="comOtvet" style="color:#1e578f;" onclick="fromto(10500)"><a href="#name" style="text-decoration:none;color:#1e578f;">Ответить</a></span>
+		<br>
+		<span id="body_10500" class="textComment">Ну чё, ещё раз условку дайте,может он исправится</span>
+	</div>			
+</div>
+<div class="viewCommentaries">
+	<div id="213766" class="rateComments">
+		<div class="rates ratminus" x="-1"></div>
+		<div class="viewrate">-2</div>
+		<div class="rates ratplus" x="1"></div>
+		<div style="clear:both;float:none;"> </div> 
+	</div>
+	<div id="213766">
+		<span id="name213766" style="color:#1e578f;font-size:18px;">Уфимка</span> 
+		<span style="color:#1e578f;font-size:10px;">18.05.2015 19:56</span> 
+		<span class="comOtvet" style="color:#1e578f;" onclick="fromto(213766)"><a href="#name" style="text-decoration:none;color:#1e578f;">Ответить</a></span>
+		<br>
+		<span id="body_213766" class="textComment">Понять. Простить.</span>
+	</div>			
+</div>
+<!-- Скрипт для выставления рейтинга -->
+<script type="text/javascript" src="js/ratingcomments.js"></script>
+
+<!-- Форма ответа -->
+<a name="name"></a>
+<div style="padding: 5px">
+	<form id="postComment" method="post" action="#" onsubmit="">
+		<input name="to" type="hidden" />
+		<div id="from">
+			<label>
+				<span style="font-size:12px;">От кого:</span>
+				<input name="From" type="text" style="padding: 1px; border: 1px #8A8A8A solid;" requared>
+			</label>
+			<span id="todo" style='color:#2B8DC8;font-weight:bold;display:none;'> -> </span>
+			<span id="to" style='color:#2B8DC8;font-size:12px;font-weight:bold;'></span>
+		</div>
+		<div>Комментарий:
+			<div>
+			<textarea name="Body" rows="3" style="padding: 1px; border: 1px #8A8A8A solid; width: 100%;"></textarea>
+			</div>
+		</div>
+		<div style="text-align:center">
+			<input type="image" src="img/sendButton.png">
+		</div>
+	</form>
+<!-- Скрипт подставляющий в определенное место имя пользователя которому отвечают -->
+<script type="text/javascript" src="js/fromto.js"></script>
+</div>
+	</div>
+</body>
+</html>

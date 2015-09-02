@@ -1,0 +1,57 @@
+/* Комментарии */
+
+.viewCommentaries{
+	background-color: #faebde; 
+	border: #c0c0c0 1px solid;
+	padding: 3px 10px;
+	padding-bottom: 10px;
+	margin-top:3px;
+	font-size: 12px;
+}
+
+.comOtvet{
+	font-size:10px;
+	border-bottom:1px dashed;
+	cursor:pointer;
+}
+
+.textComment{
+  margin-top: 2px;
+  display: block;
+}
+.rateComments{
+  float: right;
+}
+.ratplus, .ratminus, .viewrate{
+	border:1px solid #c7c7c7;
+	float:left;
+	margin-right:2px;
+}
+.ratplus, .ratminus{
+	background:url(img/rate.gif) no-repeat;
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+.viewrate{
+	height:17px;
+	min-width:18px;
+	font-size:12px;
+	padding: 0px 3px;
+	color:#6db6e2;
+	text-align:center;
+}
+.ratplus{
+	background-position: 98% 0%;
+}
+.ratplus:hover{
+	border:1px solid #6db6e2;
+	background-position: 98% 98%;
+}
+.ratminus{
+	background-position: 0% 0%;
+}
+.ratminus:hover{
+	border:1px solid #e47360;
+	background-position: 0% 98%;
+}
